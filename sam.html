@@ -1,0 +1,64 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+    <style>
+        body{
+            padding:70px;
+        }
+        button{
+            margin-top: 15px;
+        }
+        span{
+            color:white;
+        }
+    </style>
+    <body>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+
+                <div class="col-sm-8 well">
+
+
+                    <div class="row">
+                        <div class="col-sm-9"><h2>Blog Assignment</h2></div>
+
+                        <div class="col-sm-3">
+                            <button class="btn btn-primary btn-md"><a href="sam2.html"><span>Create</span></a></button>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <br><br>
+                        <div class="col-sm-3"><input type="text" placeholder="Tittle" id="txt1"></div>
+                        <div class="col-sm-6"></div>
+                         <div class="col-sm-3"><button><i class='far fa-edit' style='font-size:20px'></i><a href="sam3.html">Edit</a></button></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <div class="col-sm-12"><textarea class=form-control placeholder="content" id="txt2"></textarea></div>
+                        </div>
+                    
+                </div>
+
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+            var ty=localStorage.getItem("tapan");
+            var tk=localStorage.getItem("suman");
+            //alert(document.getElementById("txt1"))
+            document.getElementById("txt1").value=ty;
+            document.getElementById("txt2").value=tk;
+
+
+             
+             
+        </script>
+</html>

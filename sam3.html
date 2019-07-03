@@ -1,0 +1,51 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        </head>
+        <style>
+            body{
+            padding:70px;
+        }
+        </style>
+       
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8  well">
+                        <h2>Edit Blog</h2>
+                        <form action="sam.html">
+                        <div class="row">
+                            <br>
+                            <div class="col-sm-3"><input type="text" placeholder="Tittle" id="rr"></div>
+                            <div class="col-sm-9"></div>
+                        </div>
+
+                        <br><br>
+                        <div class="row">
+                        <div class="col-sm-12"><textarea class="form-control" placeholder="Content" id="ww"></textarea></div>
+                    </div>
+                    <br>
+                    <button class="btn btn-center btn-primary" onclick="ss()">update</button>
+                    <button class="btn btn-center btn-danger">cancel</button>
+                </div>
+            </form>
+                <div class="col-sm-2"></div>
+                
+            </div>
+        </div>
+    </body>
+    <script>
+
+        var vv1=localStorage.getItem("tapan");
+        var vv2=localStorage.getItem("suman");
+        document.getElementById("rr").value=vv1;
+        document.getElementById("ww").value=vv2;
+        function ss(){
+  var d1=document.getElementById("rr").value;
+  var d2=document.getElementById("ww").value;
+  localStorage.setItem("tapan", d1); 
+  localStorage.setItem("suman", d2);
+   }
+</script>
+</html>

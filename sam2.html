@@ -1,0 +1,48 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+                <script>
+                        function save(){
+                  var cc1=document.getElementById("textfield1").value;
+                  var cc2=document.getElementById("textfield").value;
+                  localStorage.setItem("tapan", cc1); 
+                  localStorage.setItem("suman", cc2);
+                   }
+                </script>
+        </head>
+        <style>
+            body{
+            padding:70px;
+        }
+        </style>
+       
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8  well">
+                        <h2>Create Blog</h2>
+                     <form action="sam.html">
+                        <div class="row">
+                            <br>
+                            <div class="col-sm-3"><input type="text" placeholder="Tittle" id="textfield1"></div>
+                            <div class="col-sm-9"></div>
+                        </div>
+
+                        <br><br>
+                        <div class="row">
+                        <div class="col-sm-12"><textarea class="form-control" id="textfield" placeholder="Content"></textarea></div>
+                    </div>
+                    <br>
+                    <button class="btn btn-center btn-primary" onclick="save()">save</button>
+                    <button class="btn btn-center btn-danger">cancel</button>
+                </form>
+                 
+                </div>
+                <div class="col-sm-2"></div>
+                
+            </div>
+        </div>
+    </body>
+</html>
